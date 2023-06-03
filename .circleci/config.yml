@@ -292,10 +292,6 @@ workflows:
       - section_07_test_app
       - section_9_differential_tests
       - section_07_test_and_upload_regression_model
-          requires:
-            - section_07_test_app
-            - section_9_differential_tests
-            - section_07_test_and_upload_regression_model
           filters:
             branches:
               only:
