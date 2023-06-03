@@ -1,13 +1,11 @@
 --extra-index-url=${PIP_EXTRA_INDEX_URL}
 
-# api
-flask>=1.1.1,<1.2.0
-
-# schema validation
-marshmallow==2.17.0
-
-# Set this to the previous model version
+uvicorn>=0.20.0,<0.30.0
+fastapi>=0.88.0,<1.0.0
+python-multipart>=0.0.5,<0.1.0
+pydantic>=1.10.4,<1.12.0
+typing_extensions>=4.2.0,<5.0.0
+loguru>=0.5.3,<1.0.0
+# fetched from gemfury
 tid-regression-model>=3.2.0
-
-# temporarily necessary as we update sklearn
-joblib>=0.14.1,<0.15.0
+feature-engine>=1.0.2,<1.6.0  # breaking change in v1.6.0
